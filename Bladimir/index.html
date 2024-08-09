@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Años de [Nombre]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#mis-xv">Mis XV Años</a></li>
+            <li><a href="#contador">Contador</a></li>
+            <li><a href="#informacion">Lo que tienes que saber</a></li>
+            <li><a href="#asistencia">Asistencia</a></li>
+            <li><a href="#vestimenta">Código de Vestimenta</a></li>
+            <li><a href="#regalos">Opciones de Regalo</a></li>
+            <li><a href="#galeria">Galería de Fotos</a></li>
+            <li><a href="#agradecimiento">Agradecimiento</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Mis XV Años -->
+    <section id="mis-xv">
+        <h1>Mis XV Años</h1>
+        <p>Bienvenidos a la celebración de mis XV años.</p>
+    </section>
+
+    <!-- Sección Contador -->
+    <section id="contador">
+        <h2>Contador</h2>
+        <div id="countdown"></div>
+    </section>
+
+    <!-- Sección Lo que tienes que saber -->
+    <section id="informacion">
+        <h2>Lo que tienes que saber</h2>
+        <div class="info-section">
+            <h3>¿Cuándo?</h3>
+            <p>Fecha y hora de la celebración.</p>
+        </div>
+        <div class="info-section">
+            <h3>Ceremonia</h3>
+            <p>Detalles sobre la ceremonia.</p>
+        </div>
+        <div class="info-section">
+            <h3>Fiesta</h3>
+            <p>Detalles sobre la fiesta.</p>
+        </div>
+    </section>
+
+    <!-- Sección Asistencia -->
+    <section id="asistencia">
+        <h2>Asistencia</h2>
+        <form id="attendance-form">
+            <!-- Paso 1: Ingresar nombre -->
+            <div id="step1">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="button" id="check-invites">Verificar Invitados</button>
+            </div>
+
+            <!-- Paso 2: Confirmar asistencia -->
+            <div id="step2" style="display:none;">
+                <div id="pass-info"></div>
+                <label for="attend">¿Asistirás?</label>
+                <select id="attend" name="attend">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Sección Código de Vestimenta -->
+    <section id="vestimenta">
+        <h2>Código de Vestimenta</h2>
+        <p>Descripción del código de vestimenta.</p>
+    </section>
+
+    <!-- Sección Opciones de Regalo -->
+    <section id="regalos">
+        <h2>Opciones de Regalo</h2>
+        <p>Ideas y opciones de regalo.</p>
+    </section>
+
+    <!-- Sección Galería de Fotos -->
+    <section id="galeria">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery">
+            <!-- Añadir imágenes aquí -->
+        </div>
+    </section>
+
+    <!-- Sección Agradecimiento -->
+    <section id="agradecimiento">
+        <h2>Agradecimiento</h2>
+        <p>Mensaje de agradecimiento.</p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

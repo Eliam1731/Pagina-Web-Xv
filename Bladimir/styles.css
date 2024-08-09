@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.info-section {
+    margin-bottom: 1em;
+}
+
+#countdown {
+    font-size: 2em;
+    color: #d9534f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form select, form button {
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+form button {
+    width: 50%;
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    margin: 0.5em;
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    form label, form input, form select, form button {
+        width: 60%;
+    }
+
+    form button {
+        width: 30%;
+    }
+}
